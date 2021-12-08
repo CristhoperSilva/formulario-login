@@ -12,12 +12,15 @@
         <header>
             <h1>Faça seu login</h1>
         </header>
-        <div class="fields">
-            <label for="email">E-mail</label>
-            <input type="email" name="email" id="email">
-            <label for="password">Senha</label>
-            <input type="password" name="password" id="password">
-            <input type="submit" value="CONTINUAR" id="button">
+        <div class="form-group">
+            <form action="#" class="fields" autocomplete="off">
+                <!--Alterei o posicionamento das labels com os inputs para poder realizar a animação no css-->
+                <input type="email" name="email" id="email" required>
+                <label for="email" id="lbEmail">E-mail</label>
+                <input type="password" name="password" id="password" required>                
+                <label for="password" id="lbPassword">Senha</label>                
+                <input type="submit" value="CONTINUAR" id="button">
+            </form>            
         </div>                  
         <div class="recover-links">
             <a href="">Esqueci Minha Senha</a>

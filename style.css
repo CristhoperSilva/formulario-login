@@ -4,7 +4,7 @@ body{
     border: 0;
     font-size: 100%;    
     vertical-align: baseline;
-    background-color: #80E9F5;
+    background-color: #0E7369;
     font-family: Arial, Helvetica, sans-serif;
 }
 .box{
@@ -34,6 +34,41 @@ header h1{
     margin-left: auto;
     margin-right: auto;    
 }
+/*Ordena labels e inputs na página final, pois os mesmos foram trocados de posição para que eu conseguisse fazer a animação*/
+.fields #lbEmail{
+    order: -4;
+}
+.fields #email{
+    order: -3;
+}
+.fields #lbPassword{
+    order: -2;
+}
+.fields #password{
+    order: -1;
+}
+.fields label{
+    color: #0E7369;
+    font-size: 15px;
+    margin-top: 25px;
+    margin-bottom: -3px;
+}
+.fields #email, 
+.fields #password{
+    border-top: none;
+    border-left: none;
+    border-right: none; 
+    border-bottom: 1px dotted #0E7369;
+    background-color: transparent;   
+}
+.fields #button{
+    margin-top: 30px;
+    height: 65px;
+    background-color: #FFF;
+    border: 1px solid #ccc;
+    color: #cacaca;
+    border-radius: 4px;    
+}
 .recover-links{
     display: flex;
     flex-direction: column;
@@ -43,6 +78,20 @@ header h1{
 }
 .recover-links a{
     margin-top: 15px;
+    text-decoration: none;
+    color: #0E7369;
 }
+.fields #email:focus{
+    outline: 0; 
+}
+.fields #password:focus{
+    outline: 0;
+}
+.fields input:focus + label{       
+    margin-bottom: 5px;
+    font-size: 11px;
+    transition: 0.2s ease-out;
+}
+
 
 
